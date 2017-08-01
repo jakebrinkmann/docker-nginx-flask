@@ -1,8 +1,5 @@
-# Watersnake-Web-Services
 
-**PROVISIONAL SOFTWARE DISCLAIMER**: This software is preliminary and is subject to revision.
-
-Codename watersnake provides a convenient way to run underlying services locally.
+Provides a convenient way to run underlying services locally.
 
 * nginx
 * python-flask (gunicorn)
