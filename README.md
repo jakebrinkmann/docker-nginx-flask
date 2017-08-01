@@ -1,10 +1,10 @@
 
-Provides a convenient way to run underlying services locally.
+Provides a convenient way to connect frontend/backend services together:
 
-* nginx
-* python-flask (gunicorn)
-* memcached
-* postgres
+* [nginx](https://nginx.org/en/): generic HTTP proxy server
+* [python-flask](http://flask.pocoo.org/) micro-web framework ([gunicorn](http://gunicorn.org/) WSGI HTTP server)
+* [memcached](https://memcached.org/): memory object caching system
+* [postgre](https://www.postgresql.org/): relational database system
 
 ```
 +---------+   +--------+
@@ -20,11 +20,6 @@ Provides a convenient way to run underlying services locally.
 +----------------------+
 
 ```
-
-## Dependencies
-
-* Docker 1.12
-* Docker Compose 1.11
 
 ## Startup
 
