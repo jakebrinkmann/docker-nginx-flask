@@ -1,0 +1,9 @@
+Flask>=Flask-0.12.1
+Jinja2>=2.9.6
+MarkupSafe>=1.0
+Werkzeug>=0.12.1
+click>=6.7
+itsdangerous>=0.24
+gunicorn>=19.7.1
+python-memcached>=1.58
+psycopg2>=2.7.1

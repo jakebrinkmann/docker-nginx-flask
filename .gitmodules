@@ -1,0 +1,12 @@
+[submodule "espa-api"]
+	path = espa-api
+	url = https://github.com/USGS-EROS/espa-api
+[submodule "espa-web"]
+	path = espa-web
+	url = https://github.com/USGS-EROS/espa-web
+[submodule "ws-web"]
+	path = ws-web
+	url = https://github.com/USGS-EROS/espa-web.git
+[submodule "ws-api"]
+	path = ws-api
+	url = https://github.com/USGS-EROS/espa-api.git

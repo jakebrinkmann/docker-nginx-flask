@@ -1,0 +1,35 @@
+version: "2"
+
+services: 
+  api:
+    build: api/
+    ports:
+      - "5000"
+  web:
+    build: web/
+    ports:
+      - "4000"
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:9.6
+    ports:
+      - "5432"
+    volumes:
+      - ./postgres/initdb.d:/docker-entrypoint-initdb.d
+      - data-volume:/var/lib/postgresql
+  memcached:
+    image: memcached:1.4
+    ports:
+      - "11211"
+  nginx:
+    build: nginx/
+    ports:
+      - "8080:80"
+    depends_on:
+      - web
+      - api
+
+volumes:
+  data-volume:
+
